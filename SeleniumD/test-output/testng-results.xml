@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26572" started-at="2020-03-12T20:53:47Z" finished-at="2020-03-12T20:54:13Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="26572" started-at="2020-03-12T20:53:47Z" finished-at="2020-03-12T20:54:13Z">
+      <class name="Scenarios.PlaceOrder">
+        <test-method status="PASS" signature="userlogin()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="userlogin" duration-ms="15094" started-at="2020-03-12T20:53:47Z" finished-at="2020-03-12T20:54:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userlogin -->
+        <test-method status="PASS" signature="searchForProduct()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="searchForProduct" duration-ms="1347" started-at="2020-03-12T20:54:02Z" depends-on-methods="Scenarios.PlaceOrder.userlogin" finished-at="2020-03-12T20:54:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForProduct -->
+        <test-method status="PASS" signature="addToCart()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="addToCart" duration-ms="2969" started-at="2020-03-12T20:54:03Z" depends-on-methods="Scenarios.PlaceOrder.searchForProduct" finished-at="2020-03-12T20:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method status="PASS" signature="billingAdrress()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="billingAdrress" duration-ms="145" started-at="2020-03-12T20:54:06Z" depends-on-methods="Scenarios.PlaceOrder.addToCart" finished-at="2020-03-12T20:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingAdrress -->
+        <test-method status="PASS" signature="shippingAddress()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="shippingAddress" duration-ms="599" started-at="2020-03-12T20:54:06Z" depends-on-methods="Scenarios.PlaceOrder.billingAdrress" finished-at="2020-03-12T20:54:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingAddress -->
+        <test-method status="PASS" signature="paymentMethod()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="paymentMethod" duration-ms="542" started-at="2020-03-12T20:54:07Z" depends-on-methods="Scenarios.PlaceOrder.shippingAddress" finished-at="2020-03-12T20:54:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentMethod -->
+        <test-method status="PASS" signature="paymentInformation()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="paymentInformation" duration-ms="415" started-at="2020-03-12T20:54:07Z" depends-on-methods="Scenarios.PlaceOrder.paymentMethod" finished-at="2020-03-12T20:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentInformation -->
+        <test-method status="PASS" signature="confirmOrder()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="confirmOrder" duration-ms="342" started-at="2020-03-12T20:54:08Z" depends-on-methods="Scenarios.PlaceOrder.paymentInformation" finished-at="2020-03-12T20:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmOrder -->
+        <test-method status="PASS" signature="successMessage()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="successMessage" duration-ms="2507" started-at="2020-03-12T20:54:08Z" depends-on-methods="Scenarios.PlaceOrder.confirmOrder" finished-at="2020-03-12T20:54:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successMessage -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:Scenarios.PlaceOrder@1aeed2f]" name="logout" duration-ms="2444" started-at="2020-03-12T20:54:11Z" depends-on-methods="Scenarios.PlaceOrder.successMessage" finished-at="2020-03-12T20:54:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- Scenarios.PlaceOrder -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
